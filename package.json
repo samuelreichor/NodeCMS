@@ -1,0 +1,23 @@
+{
+  "name": "nodecms",
+  "version": "1.0.0",
+  "description": "A Node JS CMS which suits your needs.",
+  "scripts": {
+    "global-install": "concurrently \"cd backend && npm i\" \"cd frontend && npm i\" ",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\" ",
+    "setup:dev": "npm run global-install && npm run setup:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelreichor/NodeCMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelreichor/NodeCMS/issues"
+  },
+  "homepage": "https://github.com/samuelreichor/NodeCMS#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
